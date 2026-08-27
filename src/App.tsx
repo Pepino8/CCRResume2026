@@ -42,8 +42,8 @@ function App() {
       <footer className="footer">
         <div className="app-container">
           <p>
-            Diseñado y desarrollado con{' '}
-            <span className="footer-heart">❤️</span> por Cristobal Coronado Romo © {new Date().getFullYear()}
+            Designed and developed with{' '}
+            <span className="footer-heart">❤️</span> by Cristobal Coronado Romo © {new Date().getFullYear()}
           </p>
         </div>
       </footer>

@@ -28,22 +28,22 @@ export default function Projects() {
       title: 'Smart Bussing',
       category: 'mobile',
       categoryLabel: 'Mobile App',
-      date: 'Marzo 2025 - Presente',
-      award: '1er Lugar, Expo Ingeniería',
-      description: 'Aplicación móvil que provee información en tiempo real sobre rutas y horarios de autobuses en Ensenada, México, mejorando significativamente la accesibilidad del transporte público.',
+      date: 'March 2025 - Present',
+      award: '1st Place, Engineering Expo',
+      description: 'A mobile application that provides real-time information on bus routes and times in Ensenada, Mexico, significantly improving public transit accessibility.',
       bullets: [
-        'Construí el 90% de las pantallas frontend desde cero usando React Native (Expo, TypeScript) dentro de un equipo Scrum de 6 personas en 6 sprints.',
-        'Implementé mapas interactivos con Mapbox y gestioné estados complejos en tiempo real con Zustand.',
-        'Validé el producto con más de 100 estudiantes en Ensenada, logrando un 60% de mejora en la percepción de accesibilidad del transporte.'
+        'Built 90% of the front-end screens from scratch using React Native (Expo, TypeScript) within a 6-person Scrum team across 6 sprints.',
+        'Implemented interactive maps with Mapbox and managed complex real-time states with Zustand.',
+        'Validated the product with over 100 student testers in Ensenada, driving a 60% improvement in perceived transit accessibility.'
       ],
       tags: ['React Native', 'Expo', 'TypeScript', 'Mapbox', 'Zustand', 'Scrum', 'UX/UI'],
       extraDetails: {
-        architecture: 'Arquitectura limpia en React Native + Store Centralizado de Zustand. Sincronización continua de GPS mediante sockets y Renderizado GeoJSON dinámico en Mapbox SDK.',
-        impact: 'Logró agilizar los tiempos de espera de los estudiantes de CETYS al proveer predicciones certeras y visuales del transporte.',
+        architecture: 'Clean architecture in React Native + centralized Zustand store. Continuous GPS synchronization using websockets and dynamic GeoJSON rendering on Mapbox SDK.',
+        impact: 'Successfully reduced CETYS student wait times by providing accurate and visual transit predictions.',
         metrics: [
-          { label: 'Pantallas Creadas', value: '90%' },
-          { label: 'Usuarios de Prueba', value: '100+' },
-          { label: 'Mejora en Acceso', value: '60%' }
+          { label: 'Screens Built', value: '90%' },
+          { label: 'Test Users', value: '100+' },
+          { label: 'Accessibility Gain', value: '60%' }
         ]
       }
     },
@@ -52,20 +52,20 @@ export default function Projects() {
       title: 'LeetArena',
       category: 'frontend',
       categoryLabel: 'Web App',
-      date: 'Septiembre 2025 - Presente',
-      description: 'Plataforma web competitiva en tiempo real para organizar torneos y entrenamientos de programación de estilo LeetCode entre entusiastas y miembros del club.',
+      date: 'September 2025 - Present',
+      description: 'Real-time competitive web platform for organizing LeetCode-style programming tournaments and training for club members and enthusiasts.',
       bullets: [
-        'Diseñé y construí la interfaz de usuario completa en React (Vite) para una plataforma activa de más de 40 competidores del club universitario.',
-        'Creé componentes altamente reutilizables y layouts dinámicos optimizando los tiempos de render para tablas de clasificación en vivo.'
+        'Designed and built the complete user interface in React (Vite) for an active platform of over 40 university club competitors.',
+        'Created highly reusable components and dynamic layouts, optimizing render times for live leaderboards.'
       ],
       tags: ['React', 'Vite', 'TypeScript', 'CSS Modules', 'Tailwind', 'Realtime UI'],
       extraDetails: {
-        architecture: 'Desarrollado sobre Vite para carga ultra-rápida. Componentes de UI modulares y optimizados para evitar re-renders masivos al actualizar rankings en tiempo real.',
-        impact: 'Fomentó la participación activa en el club de programación algorítmica de CETYS, sirviendo de práctica real para competencias ICPC.',
+        architecture: 'Developed on top of Vite for ultra-fast load speeds. Modular UI components optimized to prevent massive re-renders during real-time ranking updates.',
+        impact: 'Fostered active participation in the CETYS algorithmic programming club, serving as practical prep for ICPC competitions.',
         metrics: [
-          { label: 'Miembros Activos', value: '40+' },
-          { label: 'Tiempo de Carga', value: '< 1s' },
-          { label: 'Componentes Reutilizables', value: '15+' }
+          { label: 'Active Members', value: '40+' },
+          { label: 'Load Time', value: '< 1s' },
+          { label: 'Reusable Components', value: '15+' }
         ]
       }
     },
@@ -74,22 +74,22 @@ export default function Projects() {
       title: 'Rachel AutoPoster',
       category: 'fullstack',
       categoryLabel: 'Fullstack App',
-      date: 'Julio 2025 - Presente',
-      description: 'Sistema completo diseñado para automatizar y optimizar la publicación y gestión de pedidos de GameFlip, reduciendo tiempos operativos al mínimo.',
+      date: 'July 2025 - Present',
+      description: 'Comprehensive system designed to automate and optimize the posting and management of GameFlip orders, reducing manual operations to a minimum.',
       bullets: [
-        'Reduje el tiempo de integración de características en un 75% (de 1 mes a 1 semana) mediante una arquitectura modular en Node.js y Express.',
-        'Aseguré y documenté 21 endpoints RESTful en SQLite aplicando limitadores de tasa (rate limiting) de 100 peticiones por cada 15 minutos por IP.',
-        'Reduje el tiempo de despliegue de 3 minutos a solo 30 segundos (83% más rápido) configurando un flujo de CI/CD automatizado con Docker y Render.',
-        'Creé 12 componentes interactivos reutilizables en React (Vite) + Tailwind/MUI para carga de imágenes, búsquedas y paneles de administración.'
+        'Cut feature integration time by 75% (from 1 month to 1 week) by architecting a modular full-stack API in Node.js and Express.',
+        'Secured and documented 21 RESTful SQLite endpoints, applying rate limiting capped at 100 requests per 15 minutes per IP.',
+        'Cut deployment time from 3 minutes to just 30 seconds (83% faster) by setting up a Docker-based automated CI/CD pipeline on Render.',
+        'Created 12 reusable React (Vite) + Tailwind/MUI frontend components for image upload, searchable listings, and dashboard views.'
       ],
       tags: ['Node.js', 'Express', 'SQLite', 'Docker', 'React', 'Vite', 'CI/CD', 'MUI'],
       extraDetails: {
-        architecture: 'Separación completa de base de datos e interfaz con API REST modular en Express, persistida en SQLite con transacciones ACID. Contenedores Docker orquestados para despliegues automatizados.',
-        impact: 'Automatización total de inventarios digitales, evitando retrasos de publicación manual y previniendo ataques de denegación de servicio.',
+        architecture: 'Complete decoupling of database and interface with modular Express REST API, persisted on SQLite with ACID transactions. Orchestrated Docker containers for automated releases.',
+        impact: 'Complete digital inventory automation, preventing manual publishing delays and securing endpoints against denial of service attacks.',
         metrics: [
-          { label: 'Endpoints CRUD', value: '21' },
-          { label: 'Integración veloz', value: '-75%' },
-          { label: 'Despliegue CI/CD', value: '30s' }
+          { label: 'CRUD Endpoints', value: '21' },
+          { label: 'Integration Speedup', value: '-75%' },
+          { label: 'CI/CD Deploy', value: '30s' }
         ]
       }
     }
@@ -110,8 +110,8 @@ export default function Projects() {
   return (
     <section id="projects" className="app-container">
       <div className="section-header">
-        <h2 className="section-title">Proyectos Destacados</h2>
-        <p className="section-subtitle">Una selección de mis trabajos más representativos en desarrollo web, móvil e integraciones fullstack.</p>
+        <h2 className="section-title">Featured Projects</h2>
+        <p className="section-subtitle">A selection of my most representative works in web, mobile, and full-stack integrations.</p>
       </div>
 
       <div className="projects-filter-bar">
@@ -119,7 +119,7 @@ export default function Projects() {
           className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
           onClick={() => setFilter('all')}
         >
-          Todos
+          All
         </button>
         <button 
           className={`filter-btn ${filter === 'mobile' ? 'active' : ''}`}
@@ -187,7 +187,7 @@ export default function Projects() {
                   className="project-details-btn"
                   onClick={() => toggleDetails(project.id)}
                 >
-                  {isExpanded ? 'Ocultar Detalles' : 'Ver Detalles y Métricas'}
+                  {isExpanded ? 'Hide Details' : 'View Details & Metrics'}
                   <svg 
                     width="14" 
                     height="14" 
@@ -206,10 +206,10 @@ export default function Projects() {
               {isExpanded && (
                 <div className="project-details-panel">
                   <div>
-                    <strong>Arquitectura:</strong> {project.extraDetails.architecture}
+                    <strong>Architecture:</strong> {project.extraDetails.architecture}
                   </div>
                   <div>
-                    <strong>Impacto:</strong> {project.extraDetails.impact}
+                    <strong>Impact:</strong> {project.extraDetails.impact}
                   </div>
                   <div className="details-stat-grid" style={{ marginTop: '8px' }}>
                     {project.extraDetails.metrics.map((m, i) => (

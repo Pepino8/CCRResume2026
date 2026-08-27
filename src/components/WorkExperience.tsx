@@ -4,8 +4,8 @@ export default function WorkExperience() {
   return (
     <section id="experience" className="app-container">
       <div className="section-header">
-        <h2 className="section-title">Experiencia Laboral</h2>
-        <p className="section-subtitle">Trayectoria profesional colaborando en equipos y creando productos interactivos.</p>
+        <h2 className="section-title">Work Experience</h2>
+        <p className="section-subtitle">Professional history collaborating in teams and building interactive products.</p>
       </div>
 
       <div className="experience-container">
@@ -15,11 +15,11 @@ export default function WorkExperience() {
               <h3 className="company-title">English Club</h3>
               <div className="company-role">Frontend Developer</div>
             </div>
-            <span className="badge badge-primary experience-date">Noviembre 2025</span>
+            <span className="badge badge-primary experience-date">November 2025</span>
           </div>
 
           <p className="company-description">
-            Plataforma de aprendizaje de idiomas enfocada en la construcción de oraciones orales en tiempo real y retroalimentación interactiva para mejorar la fluidez en inglés.
+            A language learning platform focused on real-time oral sentence construction and interactive feedback to improve English proficiency.
           </p>
 
           <ul className="achievements-list">
@@ -30,7 +30,7 @@ export default function WorkExperience() {
                 </svg>
               </div>
               <div className="achievement-text">
-                Co-construí el módulo de comprensión lectora en <span className="highlight-stat">React</span> junto con un compañero, como parte de una plataforma de aprendizaje de idiomas para práctica oral en tiempo real.
+                Co-built the reading comprehension module in <span className="highlight-stat">React</span> alongside a teammate, as part of a language-learning platform for real-time oral practice.
               </div>
             </li>
 
@@ -41,7 +41,7 @@ export default function WorkExperience() {
                 </svg>
               </div>
               <div className="achievement-text">
-                Conecté el frontend del módulo de lectura con el backend utilizando <span className="highlight-stat">Axios</span>, aprendiendo la biblioteca desde cero en solo <span className="highlight-secondary">3 días</span> para cumplir con una fecha límite de entrega crítica.
+                Connected the reading module's frontend to the backend using <span className="highlight-stat">Axios</span>, learning the library from scratch within <span className="highlight-secondary">3 days</span> to meet a hard project deadline.
               </div>
             </li>
 
@@ -52,7 +52,7 @@ export default function WorkExperience() {
                 </svg>
               </div>
               <div className="achievement-text">
-                Aumenté la finalización de sesiones en un <span className="highlight-stat">50%</span> entre <span className="highlight-secondary">6 usuarios piloto activos</span> mediante el rediseño de la interfaz de usuario del panel de estudiantes.
+                Increased session completion <span className="highlight-stat">50%</span> among <span className="highlight-secondary">6 active pilot users</span> by redesigning the student dashboard UI.
               </div>
             </li>
           </ul>

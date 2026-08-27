@@ -23,19 +23,19 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
         <nav>
           <ul className={`navbar-links ${mobileMenuOpen ? 'active' : ''}`}>
             <li className="navbar-link">
-              <a href="#about" onClick={() => setMobileMenuOpen(false)}>Sobre Mí</a>
+              <a href="#about" onClick={() => setMobileMenuOpen(false)}>About Me</a>
             </li>
             <li className="navbar-link">
-              <a href="#experience" onClick={() => setMobileMenuOpen(false)}>Experiencia</a>
+              <a href="#experience" onClick={() => setMobileMenuOpen(false)}>Experience</a>
             </li>
             <li className="navbar-link">
-              <a href="#projects" onClick={() => setMobileMenuOpen(false)}>Proyectos</a>
+              <a href="#projects" onClick={() => setMobileMenuOpen(false)}>Projects</a>
             </li>
             <li className="navbar-link">
-              <a href="#skills" onClick={() => setMobileMenuOpen(false)}>Habilidades</a>
+              <a href="#skills" onClick={() => setMobileMenuOpen(false)}>Skills</a>
             </li>
             <li className="navbar-link">
-              <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contacto</a>
+              <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</a>
             </li>
           </ul>
         </nav>
@@ -45,8 +45,8 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
           <button 
             className="icon-btn" 
             onClick={handlePrint}
-            title="Imprimir / Guardar PDF"
-            aria-label="Imprimir CV"
+            title="Print / Save PDF"
+            aria-label="Print CV"
           >
             <svg 
               width="20" 
@@ -68,8 +68,8 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
           <button 
             className="icon-btn theme-toggle" 
             onClick={toggleTheme}
-            title={theme === 'dark' ? 'Modo Claro' : 'Modo Oscuro'}
-            aria-label="Cambiar tema"
+            title={theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+            aria-label="Change theme"
           >
             {theme === 'dark' ? (
               <svg 
@@ -113,7 +113,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             className="icon-btn mobile-toggle"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             title="Menu"
-            aria-label="Abrir menu"
+            aria-label="Open menu"
           >
             {mobileMenuOpen ? (
               <svg 

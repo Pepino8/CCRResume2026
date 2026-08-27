@@ -2,14 +2,14 @@ import './Skills.css';
 
 export default function Skills() {
   const languages = [
-    { name: 'Java', level: 'Advanced', levelLabel: 'Avanzado', val: 90 },
-    { name: 'JavaScript', level: 'Advanced', levelLabel: 'Avanzado', val: 90 },
-    { name: 'TypeScript', level: 'Advanced', levelLabel: 'Avanzado', val: 90 },
-    { name: 'Python', level: 'Advanced', levelLabel: 'Avanzado', val: 85 },
-    { name: 'SQL', level: 'Advanced', levelLabel: 'Avanzado', val: 85 },
-    { name: 'Swift', level: 'Proficient', levelLabel: 'Intermedio', val: 70 },
-    { name: 'C', level: 'Beginner', levelLabel: 'Principiante', val: 45 },
-    { name: 'C++', level: 'Beginner', levelLabel: 'Principiante', val: 40 },
+    { name: 'Java', level: 'Advanced', levelLabel: 'Advanced', val: 90 },
+    { name: 'JavaScript', level: 'Advanced', levelLabel: 'Advanced', val: 90 },
+    { name: 'TypeScript', level: 'Advanced', levelLabel: 'Advanced', val: 90 },
+    { name: 'Python', level: 'Advanced', levelLabel: 'Advanced', val: 85 },
+    { name: 'SQL', level: 'Advanced', levelLabel: 'Advanced', val: 85 },
+    { name: 'Swift', level: 'Proficient', levelLabel: 'Intermediate', val: 70 },
+    { name: 'C', level: 'Beginner', levelLabel: 'Beginner', val: 45 },
+    { name: 'C++', level: 'Beginner', levelLabel: 'Beginner', val: 40 },
   ];
 
   const frameworks = [
@@ -35,32 +35,32 @@ export default function Skills() {
 
   const awards = [
     {
-      title: '1er Lugar, Expo Ingeniería CETYS',
+      title: '1st Place, CETYS Engineering Expo',
       year: '2026',
-      desc: 'Ganador de la competencia académica anual de CETYS Universidad con proyecto de ingeniería.',
+      desc: 'Winner of the annual academic engineering project competition at CETYS Universidad.',
     },
     {
-      title: '1er Lugar, Expo Ingeniería CETYS',
+      title: '1st Place, CETYS Engineering Expo',
       year: '2025',
-      desc: 'Máximo galardón académico de proyectos por el desarrollo de Smart Bussing.',
+      desc: 'Top academic project award for the development of Smart Bussing.',
     },
     {
-      title: '3er Lugar, NASA Space Apps Challenge',
+      title: '3rd Place, NASA Space Apps Challenge',
       year: '2024',
-      desc: 'Hackathon internacional resolviendo retos espaciales y científicos de la NASA.',
+      desc: 'International hackathon solving space and scientific challenges presented by NASA.',
     },
     {
-      title: 'Participación Destacada, ICPC',
+      title: 'ICPC Participation',
       year: '2025',
-      desc: 'Competidor activo en el International Collegiate Programming Contest.',
+      desc: 'Active competitor in the International Collegiate Programming Contest.',
     },
   ];
 
   return (
     <section id="skills" className="app-container">
       <div className="section-header">
-        <h2 className="section-title">Habilidades y Logros</h2>
-        <p className="section-subtitle">Dominio técnico de lenguajes, frameworks, herramientas de desarrollo y reconocimientos.</p>
+        <h2 className="section-title">Skills & Achievements</h2>
+        <p className="section-subtitle">Technical proficiency in languages, frameworks, development tools, and awards.</p>
       </div>
 
       <div className="skills-grid">
@@ -71,7 +71,7 @@ export default function Skills() {
               <polyline points="16 18 22 12 16 6"></polyline>
               <polyline points="8 6 2 12 8 18"></polyline>
             </svg>
-            Lenguajes
+            Languages
           </h3>
 
           <div className="lang-items">
@@ -100,7 +100,7 @@ export default function Skills() {
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
             </svg>
-            Frameworks y Herramientas
+            Frameworks & Tools
           </h3>
 
           <div className="tools-cloud">
@@ -119,7 +119,7 @@ export default function Skills() {
               <circle cx="12" cy="8" r="7"></circle>
               <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
             </svg>
-            Premios y Logros
+            Awards & Achievements
           </h3>
 
           <div className="awards-list">

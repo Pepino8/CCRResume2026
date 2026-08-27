@@ -3,10 +3,10 @@ import './Hero.css';
 
 export default function Hero() {
   const titles = [
-    'Ingeniero de Software',
-    'Desarrollador Frontend',
+    'Software Engineer',
+    'Frontend Developer',
     'Fullstack Developer',
-    'Ganador de Hackathons'
+    'Hackathon Winner'
   ];
 
   const [currentTitleIdx, setCurrentTitleIdx] = useState(0);
@@ -52,7 +52,7 @@ export default function Hero() {
   return (
     <section id="about" className="hero-section app-container animate-fade-in">
       <div className="hero-content">
-        <span className="hero-subtitle">Hola, mi nombre es</span>
+        <span className="hero-subtitle">Hi, my name is</span>
         <h1 className="hero-title">
           <span className="text-gradient">Cristobal Coronado</span>
         </h1>
@@ -61,18 +61,18 @@ export default function Hero() {
           <span className="hero-cursor"></span>
         </div>
         <p className="hero-description">
-          Estudiante de Ingeniería de Software en CETYS Universidad, apasionado por crear aplicaciones web y móviles de alto impacto. Especializado en React, React Native y Node.js, con experiencia liderando el desarrollo frontend en equipos Scrum y diseñando soluciones full-stack escalables.
+          Software Engineering student at CETYS Universidad, passionate about building high-impact web and mobile applications. Specialized in React, React Native, and Node.js, with experience leading frontend development in Scrum teams and architecting scalable full-stack solutions.
         </p>
 
         <div className="hero-buttons">
           <a href="#projects" className="btn btn-primary">
-            Ver Proyectos
+            View Projects
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
           </a>
-          <a href="#contact" className="btn btn-secondary">Contactar</a>
+          <a href="#contact" className="btn btn-secondary">Contact Me</a>
         </div>
 
         <div className="hero-socials">
@@ -94,7 +94,7 @@ export default function Hero() {
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
           </a>
-          <a href="tel:+526462568363" className="social-link" title="Teléfono">
+          <a href="tel:+526462568363" className="social-link" title="Phone">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
             </svg>
@@ -128,8 +128,8 @@ export default function Hero() {
             <h4>CETYS Universidad</h4>
             <p>Bachelor of Science in Software Engineering</p>
             <div className="edu-meta">
-              <span>Graduación: Julio 2027</span>
-              <span>Promedio: 94/100</span>
+              <span>Graduation: July 2027</span>
+              <span>GPA: 94/100</span>
             </div>
           </div>
         </div>
@@ -137,16 +137,16 @@ export default function Hero() {
         {/* Stats Grid */}
         <div className="stats-bar">
           <div className="stat-item">
-            <div className="stat-num">1ro</div>
+            <div className="stat-num">1st</div>
             <div className="stat-label">Expo CETYS</div>
           </div>
           <div className="stat-item">
             <div className="stat-num">100+</div>
-            <div className="stat-label">Tesores</div>
+            <div className="stat-label">Testers</div>
           </div>
           <div className="stat-item">
             <div className="stat-num">+50%</div>
-            <div className="stat-label">Eficiencia</div>
+            <div className="stat-label">Efficiency</div>
           </div>
         </div>
       </div>

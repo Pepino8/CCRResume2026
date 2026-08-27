@@ -22,20 +22,20 @@ export default function Contact() {
   const validate = (): boolean => {
     const tempErrors: FormErrors = {};
     if (!form.name.trim()) {
-      tempErrors.name = 'El nombre es obligatorio.';
+      tempErrors.name = 'Full Name is required.';
     }
     
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!form.email.trim()) {
-      tempErrors.email = 'El correo electrónico es obligatorio.';
+      tempErrors.email = 'Email Address is required.';
     } else if (!emailRegex.test(form.email)) {
-      tempErrors.email = 'El formato de correo no es válido.';
+      tempErrors.email = 'Invalid email format.';
     }
 
     if (!form.message.trim()) {
-      tempErrors.message = 'El mensaje no puede estar vacío.';
+      tempErrors.message = 'Message cannot be empty.';
     } else if (form.message.trim().length < 10) {
-      tempErrors.message = 'El mensaje debe tener al menos 10 caracteres.';
+      tempErrors.message = 'Message must be at least 10 characters long.';
     }
 
     setErrors(tempErrors);
@@ -67,8 +67,8 @@ export default function Contact() {
   return (
     <section id="contact" className="app-container">
       <div className="section-header">
-        <h2 className="section-title">Contacto</h2>
-        <p className="section-subtitle">¿Tienes algún proyecto en mente o te gustaría colaborar? Escríbeme y hagamos algo increíble.</p>
+        <h2 className="section-title">Contact</h2>
+        <p className="section-subtitle">Have a project in mind or want to collaborate? Drop me a line and let's build something amazing.</p>
       </div>
 
       <div className="contact-section">
@@ -96,7 +96,7 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <div className="contact-detail-lbl">Teléfono</div>
+              <div className="contact-detail-lbl">Phone</div>
               <div className="contact-detail-val">
                 <a href="tel:+526462568363">+52 (646) 256 8363</a>
               </div>
@@ -111,8 +111,8 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <div className="contact-detail-lbl">Ubicación</div>
-              <div className="contact-detail-val">Ensenada, B.C., México</div>
+              <div className="contact-detail-lbl">Location</div>
+              <div className="contact-detail-val">Ensenada, B.C., Mexico</div>
             </div>
           </div>
         </div>
@@ -122,13 +122,13 @@ export default function Contact() {
           {!isSubmitted ? (
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name" className="form-label">Nombre Completo</label>
+                <label htmlFor="name" className="form-label">Full Name</label>
                 <input 
                   type="text" 
                   id="name"
                   name="name" 
                   className="form-input" 
-                  placeholder="Tu nombre..."
+                  placeholder="Your name..."
                   value={form.name}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -137,13 +137,13 @@ export default function Contact() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="email" className="form-label">Correo Electrónico</label>
+                <label htmlFor="email" className="form-label">Email Address</label>
                 <input 
                   type="email" 
                   id="email"
                   name="email" 
                   className="form-input" 
-                  placeholder="tu@correo.com"
+                  placeholder="you@email.com"
                   value={form.email}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -152,12 +152,12 @@ export default function Contact() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="message" className="form-label">Mensaje</label>
+                <label htmlFor="message" className="form-label">Message</label>
                 <textarea 
                   id="message"
                   name="message" 
                   className="form-input" 
-                  placeholder="Escribe tu mensaje aquí..."
+                  placeholder="Write your message here..."
                   value={form.message}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -182,11 +182,11 @@ export default function Contact() {
                       <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
                       <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
                     </svg>
-                    Enviando...
+                    Sending...
                   </>
                 ) : (
                   <>
-                    Enviar Mensaje
+                    Send Message
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <line x1="22" y1="2" x2="11" y2="13"></line>
                       <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -202,13 +202,13 @@ export default function Contact() {
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </div>
-              <h3 className="success-title">¡Mensaje Enviado!</h3>
-              <p className="success-desc">Gracias por contactarme, Cristobal te responderá lo antes posible.</p>
+              <h3 className="success-title">Message Sent!</h3>
+              <p className="success-desc">Thank you for reaching out! Cristobal will get back to you as soon as possible.</p>
               <button 
                 className="btn btn-secondary" 
                 onClick={() => setIsSubmitted(false)}
               >
-                Enviar otro mensaje
+                Send another message
               </button>
             </div>
           )}
